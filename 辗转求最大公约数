@@ -1,0 +1,27 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int fun(int x, int y)
+{
+	if (x < y)
+	{
+		int t = x;
+		x = y;
+		y = t;
+	}
+	while (x%y)
+	{
+		int t = x % y;
+		x = y;
+		y = t;
+	}
+	return y;
+}
+int main()
+{
+	int a = 0;
+	int b = 0;
+	printf("input a and b\n");
+	scanf("%d%d", &a, &b);
+	printf("最大公约数：%d",fun(a,b));
+	return 0;
+}
