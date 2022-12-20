@@ -8,7 +8,7 @@ int fun(int x, int y)
 		x = y;
 		y = t;
 	}
-	while (x%y)
+	while (t=x%y)
 	{
 		
 		x = y;
