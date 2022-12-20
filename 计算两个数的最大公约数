@@ -1,0 +1,26 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+int a = 0;
+int b = 0;
+printf("input a and b\n");
+scanf("%d%d", &a, &b);
+if (a < b)
+{
+	int t = a;
+	a = b;
+	b = t;
+}
+int i = b;//循环变量
+while (i > 0)
+{
+	if (b % i == 0 && a % i == 0)
+	{
+		printf("最大公约数：%d\n", i);
+		break;
+	}
+	i--;
+}
+return 0;
+}
