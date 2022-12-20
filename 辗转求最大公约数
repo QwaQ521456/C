@@ -10,7 +10,7 @@ int fun(int x, int y)
 	}
 	while (x%y)
 	{
-		int t = x % y;
+		
 		x = y;
 		y = t;
 	}
